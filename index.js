@@ -16,13 +16,17 @@ const tabs = [
     {url: "www.linkedin.com/in/annalena-roos-047277269"}
 ]
 
-// 2. Listen for clicks on tabBtn. Log Per's LinkedIn URL to the console
+// 2. Stack Overfolow How to get current active tab
 tabBtn.addEventListener("click", function(){
-   // console.log(tabs[0].url)
+    chrome.tabs.query({active:true, currentWindow: true}, function(tabs) {
+    let activeTabs = tabs[0]
+    let activeTabId = activeTab.id; 
+    });
+    
     myLeads.push(tabs[0].url)
     localStorage.setItem("myLeads", JSON.stringify(myLeads) )
     render(myLeads)
-})
+});
 
 function render(leads) {
     let listItems = ""
