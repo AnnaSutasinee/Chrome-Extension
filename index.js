@@ -13,7 +13,7 @@ if (leadsFromLocalStorage) {
 }
 
 const tabs = [
-    {url: "https://www.linkedin.com/in/per-harald-borgen/"}
+    {url: "www.linkedin.com/in/annalena-roos-047277269"}
 ]
 
 // 2. Listen for clicks on tabBtn. Log Per's LinkedIn URL to the console
